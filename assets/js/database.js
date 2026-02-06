@@ -6,6 +6,7 @@ $(document).ready(function () {
 
             const row = `
                 <tr class="agent-row" data-id="${agent.id}" style="cursor:pointer">
+                    <td>${agent.matricola}</td>
                     <td>${agent.nome}</td>
                     <td>${agent.cognome}</td>
                     <td>
@@ -26,3 +27,4 @@ $(document).ready(function () {
 
 
 });
+
