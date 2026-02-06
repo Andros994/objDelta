@@ -1,0 +1,12 @@
+{
+  "agents": [
+    {
+      "id": 1,
+      "nome": "Andrea",
+      "cognome": "Sandri",
+      "status": "Operativo",
+      "profile_pic": "assets/img/andrea.jpg",
+      "bio": "Breve descrizione della bio"
+    }
+  ]
+}
