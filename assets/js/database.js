@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $.getJSON("/data/agents.json", function (data) {
+    $.getJSON("data/agents.json", function (data) {
 
         data.agents.forEach(agent => {
 
@@ -23,5 +23,6 @@ $(document).ready(function () {
         });
 
     });
+
 
 });
