@@ -23,7 +23,7 @@ $(document).ready(function () {
         // 4️⃣ Popolo la card con i dati dell'agente
         $("#profilePic").attr("src", agent.profile_pic);
         $("#fullName").text(`${agent.nome} ${agent.cognome}`);
-        $("#status").text(agent.status);
+        $("#status").val(agent.status);
         $("#matricola").text(`Matricola: ${agent.matricola}`);
         $("#bio").text(agent.bio);
 
@@ -32,3 +32,4 @@ $(document).ready(function () {
     });
 
 });
+
