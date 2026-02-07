@@ -1,3 +1,34 @@
 #background {
     background-color: rgb(44, 44, 116);
 }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    background: linear-gradient(
+        270deg,
+        #0a1a3a,
+        #0d47a1,
+        #1e88e5,
+        #4fc3f7
+    );
+    background-size: 600% 600%;
+
+    animation: gradientMove 20s ease infinite;
+}
+
+/* Animazione gradiente */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
