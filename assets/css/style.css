@@ -2,6 +2,11 @@
     background-color: rgb(44, 44, 116);
 }
 
+.card{
+    background-color: #002047;
+    color: white;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -30,4 +35,5 @@ body {
         background-position: 0% 50%;
     }
 }
+
 
