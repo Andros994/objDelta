@@ -27,9 +27,16 @@ $(document).ready(function () {
         $("#matricola").text(`Matricola: ${agent.matricola}`);
         $("#bio").text(agent.bio);
 
+        // Listener cambio status (solo frontend per ora)
+        $("#status").on("change", function () {
+            const newStatus = $(this).val();
+            alert(`Nuovo status per ${agent.cognome} ${agent.nome}: ${newStatus}`);
+        });
+
     }).fail(function () {
         console.error("Errore nel caricamento di agents.json");
     });
 
 });
+
 
