@@ -1,15 +1,15 @@
 {
   "agents": [
-    { "id": 1, "nome": "Andrea", "cognome": "Sandri", "status": "Operativo", "profile_pic": "assets/img/agent1.jpg", "bio": "Esperto in infiltrazione europea e cyber intelligence.", "matricola": "7345821" },
-    { "id": 2, "nome": "Lucas", "cognome": "Moreau", "status": "Operativo", "profile_pic": "assets/img/agent2.jpg", "bio": "Specialista in operazioni sotto copertura in Francia.", "matricola": "7345821" },
-    { "id": 3, "nome": "Mikhail", "cognome": "Orlov", "status": "In missione", "profile_pic": "assets/img/agent3.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "7345821" },
+    { "id": 1, "nome": "Andrea", "cognome": "Sandri", "status": "Operativo", "profile_pic": "assets/img/andrea_s.jpg", "bio": "Esperto in infiltrazione europea e cyber intelligence.", "matricola": "7345821" },
+    { "id": 2, "nome": "Lucas", "cognome": "Moreau", "status": "Operativo", "profile_pic": "assets/img/eugenio.jpg", "bio": "Specialista in operazioni sotto copertura in Francia.", "matricola": "7345821" },
+    { "id": 3, "nome": "Mikhail", "cognome": "Orlov", "status": "In missione", "profile_pic": "assets/img/gianluca.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "7345821" },
     { "id": 4, "nome": "Sofia", "cognome": "Ivanova", "status": "Operativo", "profile_pic": "assets/img/agent4.jpg", "bio": "Esperta in controspionaggio e interrogatori.", "matricola": "7345821" },
-    { "id": 5, "nome": "James", "cognome": "Carter", "status": "Operativo", "profile_pic": "assets/img/agent5.jpg", "bio": "Ex forze speciali, specializzato in estrazioni rapide.", "matricola": "7345821" },
+    { "id": 5, "nome": "James", "cognome": "Carter", "status": "Operativo", "profile_pic": "assets/img/matteo_r.jpg", "bio": "Ex forze speciali, specializzato in estrazioni rapide.", "matricola": "7345821" },
     { "id": 6, "nome": "Elena", "cognome": "Rossi", "status": "Spia nemica", "profile_pic": "assets/img/agent6.jpg", "bio": "Esperta in intelligence mediterranea.", "matricola": "7345821"},
-    { "id": 7, "nome": "David", "cognome": "Klein", "status": "Operativo", "profile_pic": "assets/img/agent7.jpg", "bio": "Specialista in crittografia e comunicazioni sicure.", "matricola": "7345821" },
+    { "id": 7, "nome": "David", "cognome": "Klein", "status": "Operativo", "profile_pic": "assets/img/giuseppe.jpg", "bio": "Specialista in crittografia e comunicazioni sicure.", "matricola": "7345821" },
     { "id": 8, "nome": "Nadia", "cognome": "Petrova", "status": "Offline", "profile_pic": "assets/img/agent8.jpg", "bio": "Analista logistica e supporto operativo.", "matricola": "7345821" },
-    { "id": 9, "nome": "Omar", "cognome": "Al-Fayed", "status": "Operativo", "profile_pic": "assets/img/agent9.jpg", "bio": "Esperto in infiltrazioni in Medio Oriente.", "matricola": "7345821" },
-    { "id": 10, "nome": "Claire", "cognome": "Dubois", "status": "In missione", "profile_pic": "assets/img/agent10.jpg", "bio": "Specialista in operazioni diplomatiche coperte.", "matricola": "7345821" },
+    { "id": 9, "nome": "Omar", "cognome": "Al-Fayed", "status": "Operativo", "profile_pic": "assets/img/alessio_v.jpg", "bio": "Esperto in infiltrazioni in Medio Oriente.", "matricola": "7345821" },
+    { "id": 10, "nome": "Claire", "cognome": "Dubois", "status": "In missione", "profile_pic": "assets/img/denny.jpg", "bio": "Specialista in operazioni diplomatiche coperte.", "matricola": "7345821" },
     { "id": 11, "nome": "Victor", "cognome": "Navarro", "status": "Operativo", "profile_pic": "assets/img/agent11.jpg", "bio": "Esperto in intelligence sudamericana.", "matricola": "7345821" },
     { "id": 12, "nome": "Hiroshi", "cognome": "Tanaka", "status": "Operativo", "profile_pic": "assets/img/agent12.jpg", "bio": "Specialista in sorveglianza urbana.", "matricola": "7345821" },
     { "id": 13, "nome": "Anna", "cognome": "Kowalska", "status": "Offline", "profile_pic": "assets/img/agent13.jpg", "bio": "Analista strategica dell’Europa orientale.", "matricola": "7345821" },
@@ -52,4 +52,5 @@
     { "id": 50, "nome": "Leon", "cognome": "Fischer", "status": "In missione", "profile_pic": "assets/img/agent50.jpg", "bio": "Operazioni ad alto rischio internazionale.", "matricola": "7345821" }
   ]
 }
+
 
