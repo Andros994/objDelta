@@ -9,9 +9,9 @@ body {
     background: linear-gradient(
         270deg,
         #0a1a3a,
-        #0d47a1,
-        #1e88e5,
-        #4fc3f7
+        #09367a,
+        #115b9b,
+        #0a5273
     );
     background-size: 600% 600%;
 
@@ -30,5 +30,4 @@ body {
         background-position: 0% 50%;
     }
 }
-
 
