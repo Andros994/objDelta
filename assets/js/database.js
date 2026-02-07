@@ -4,27 +4,47 @@ $(document).ready(function () {
 
         data.agents.forEach(agent => {
 
-            const row = `
+            let statusClass = "";
+
+            switch (agent.status) {
+                case "Operativo":
+                    statusClass = "bg-success";
+                    break;
+                case "In missione":
+                    statusClass = "bg-warning text-dark";
+                    break;
+                case "Spia nemica":
+                    statusClass = "bg-danger";
+                    break;
+                case "Offline":
+                    statusClass = "bg-secondary";
+                    break;
+                default:
+                    statusClass = "bg-light text-dark";
+            }
+
+            $("#agentsTable").append(`
                 <tr class="agent-row" data-id="${agent.id}" style="cursor:pointer">
-                    <td>${agent.matricola}</td>
+                    <td><strong>${agent.matricola}</strong></td>
                     <td>${agent.nome}</td>
                     <td>${agent.cognome}</td>
                     <td>
-                        <span class="badge bg-success">${agent.status}</span>
+                        <span class="badge ${statusClass}">
+                            ${agent.status}
+                        </span>
                     </td>
                 </tr>
-            `;
+            `);
 
-            $("#agentsTable").append(row);
         });
 
         $(".agent-row").on("click", function () {
-            const agentId = $(this).data("id");
-            window.location.href = `agent.html?id=${agentId}`;
+            const id = $(this).data("id");
+            window.location.href = `agent.html?id=${id}`;
         });
 
+    }).fail(function () {
+        console.error("Errore nel caricamento di agents.json");
     });
 
-
 });
-
