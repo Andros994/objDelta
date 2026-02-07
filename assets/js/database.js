@@ -43,8 +43,13 @@ $(document).ready(function () {
             window.location.href = `agent.html?id=${id}`;
         });
 
+        $("#logout").on("click", function () {
+             window.location.href = `index.html`;
+        }
+
     }).fail(function () {
         console.error("Errore nel caricamento di agents.json");
     });
 
 });
+
