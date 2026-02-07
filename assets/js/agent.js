@@ -30,7 +30,7 @@ $(document).ready(function () {
         // Listener cambio status (solo frontend per ora)
         $("#status").on("change", function () {
             const newStatus = $(this).val();
-            alert(`Nuovo status per ${agent.cognome} ${agent.nome}: ${newStatus}`);
+            alert(`Nuovo status per ${agent.nome} ${agent.cognome}: ${newStatus}`);
         });
 
     }).fail(function () {
@@ -38,5 +38,6 @@ $(document).ready(function () {
     });
 
 });
+
 
 
