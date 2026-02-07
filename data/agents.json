@@ -5,7 +5,7 @@
     { "id": 3, "nome": "Mikhail", "cognome": "Orlov", "status": "In missione", "profile_pic": "assets/img/agent3.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "7345821" },
     { "id": 4, "nome": "Sofia", "cognome": "Ivanova", "status": "Operativo", "profile_pic": "assets/img/agent4.jpg", "bio": "Esperta in controspionaggio e interrogatori.", "matricola": "7345821" },
     { "id": 5, "nome": "James", "cognome": "Carter", "status": "Operativo", "profile_pic": "assets/img/agent5.jpg", "bio": "Ex forze speciali, specializzato in estrazioni rapide.", "matricola": "7345821" },
-    { "id": 6, "nome": "Elena", "cognome": "Rossi", "status": "In missione", "profile_pic": "assets/img/agent6.jpg", "bio": "Esperta in intelligence mediterranea.", "matricola": "7345821"},
+    { "id": 6, "nome": "Elena", "cognome": "Rossi", "status": "Spia nemica", "profile_pic": "assets/img/agent6.jpg", "bio": "Esperta in intelligence mediterranea.", "matricola": "7345821"},
     { "id": 7, "nome": "David", "cognome": "Klein", "status": "Operativo", "profile_pic": "assets/img/agent7.jpg", "bio": "Specialista in crittografia e comunicazioni sicure.", "matricola": "7345821" },
     { "id": 8, "nome": "Nadia", "cognome": "Petrova", "status": "Offline", "profile_pic": "assets/img/agent8.jpg", "bio": "Analista logistica e supporto operativo.", "matricola": "7345821" },
     { "id": 9, "nome": "Omar", "cognome": "Al-Fayed", "status": "Operativo", "profile_pic": "assets/img/agent9.jpg", "bio": "Esperto in infiltrazioni in Medio Oriente.", "matricola": "7345821" },
@@ -16,12 +16,12 @@
     { "id": 14, "nome": "Mark", "cognome": "Johnson", "status": "Operativo", "profile_pic": "assets/img/agent14.jpg", "bio": "Esperto in operazioni black ops.", "matricola": "7345821" },
     { "id": 15, "nome": "Isabel", "cognome": "Moreno", "status": "In missione", "profile_pic": "assets/img/agent15.jpg", "bio": "Specialista in coperture diplomatiche.", "matricola": "7345821" },
     { "id": 16, "nome": "Sergei", "cognome": "Volkov", "status": "Operativo", "profile_pic": "assets/img/agent16.jpg", "bio": "Esperto in intelligence militare.", "matricola": "7345821" },
-    { "id": 17, "nome": "Lina", "cognome": "Haddad", "status": "Operativo", "profile_pic": "assets/img/agent17.jpg", "bio": "Analista culturale e linguistica.", "matricola": "7345821" },
+    { "id": 17, "nome": "Lina", "cognome": "Haddad", "status": "Spia nemica", "profile_pic": "assets/img/agent17.jpg", "bio": "Analista culturale e linguistica.", "matricola": "7345821" },
     { "id": 18, "nome": "Thomas", "cognome": "Weber", "status": "Offline", "profile_pic": "assets/img/agent18.jpg", "bio": "Supporto strategico e pianificazione missioni.", "matricola": "7345821" },
     { "id": 19, "nome": "Yara", "cognome": "Silva", "status": "Operativo", "profile_pic": "assets/img/agent19.jpg", "bio": "Esperta in sorveglianza digitale.", "matricola": "7345821" },
     { "id": 20, "nome": "Alexei", "cognome": "Morozov", "status": "In missione", "profile_pic": "assets/img/agent20.jpg", "bio": "Infiltrazioni ad alto rischio.", "matricola": "7345821" },
     { "id": 21, "nome": "Rachel", "cognome": "Stein", "status": "Operativo", "profile_pic": "assets/img/agent21.jpg", "bio": "Esperta in controintelligence.", "matricola": "7345821" },
-    { "id": 22, "nome": "Paolo", "cognome": "Venturi", "status": "Operativo", "profile_pic": "assets/img/agent22.jpg", "bio": "Specialista in reti criminali europee.", "matricola": "7345821" },
+    { "id": 22, "nome": "Paolo", "cognome": "Venturi", "status": "Spia nemica", "profile_pic": "assets/img/agent22.jpg", "bio": "Specialista in reti criminali europee.", "matricola": "7345821" },
     { "id": 23, "nome": "Ivan", "cognome": "Sokolov", "status": "Offline", "profile_pic": "assets/img/agent23.jpg", "bio": "Analista di sicurezza internazionale.", "matricola": "7345821" },
     { "id": 24, "nome": "Maya", "cognome": "Singh", "status": "Operativo", "profile_pic": "assets/img/agent24.jpg", "bio": "Esperta in intelligence asiatica.", "matricola": "7345821" },
     { "id": 25, "nome": "Daniel", "cognome": "Reyes", "status": "In missione", "profile_pic": "assets/img/agent25.jpg", "bio": "Operazioni sotto copertura a lungo termine.", "matricola": "7345821" },
@@ -30,7 +30,7 @@
     { "id": 28, "nome": "Carlos", "cognome": "Mendez", "status": "Offline", "profile_pic": "assets/img/agent28.jpg", "bio": "Supporto operativo e logistico.", "matricola": "7345821" },
     { "id": 29, "nome": "Aisha", "cognome": "Khan", "status": "Operativo", "profile_pic": "assets/img/agent29.jpg", "bio": "Esperta in cyber spionaggio.", "matricola": "7345821" },
     { "id": 30, "nome": "Robert", "cognome": "Miller", "status": "In missione", "profile_pic": "assets/img/agent30.jpg", "bio": "Operazioni speciali internazionali.", "matricola": "7345821" },
-    { "id": 31, "nome": "Giulia", "cognome": "Bianchi", "status": "Operativo", "profile_pic": "assets/img/agent31.jpg", "bio": "Analista strategica europea.", "matricola": "7345821" },
+    { "id": 31, "nome": "Giulia", "cognome": "Bianchi", "status": "Spia nemica", "profile_pic": "assets/img/agent31.jpg", "bio": "Analista strategica europea.", "matricola": "7345821" },
     { "id": 32, "nome": "Ethan", "cognome": "Brooks", "status": "Offline", "profile_pic": "assets/img/agent32.jpg", "bio": "Supporto tecnologico e IT.", "matricola": "7345821" },
     { "id": 33, "nome": "Natalia", "cognome": "Romanenko", "status": "Operativo", "profile_pic": "assets/img/agent33.jpg", "bio": "Esperta in missioni sotto copertura.", "matricola": "7345821" },
     { "id": 34, "nome": "Samuel", "cognome": "Okoye", "status": "Operativo", "profile_pic": "assets/img/agent34.jpg", "bio": "Intelligence africana e operazioni sul campo.", "matricola": "7345821" },
@@ -38,7 +38,7 @@
     { "id": 36, "nome": "Peter", "cognome": "Novak", "status": "Operativo", "profile_pic": "assets/img/agent36.jpg", "bio": "Analista di rischio geopolitico.", "matricola": "7345821" },
     { "id": 37, "nome": "Zhang", "cognome": "Wei", "status": "Operativo", "profile_pic": "assets/img/agent37.jpg", "bio": "Esperto in intelligence economica.", "matricola": "7345821" },
     { "id": 38, "nome": "Amir", "cognome": "Rahman", "status": "Offline", "profile_pic": "assets/img/agent38.jpg", "bio": "Supporto operativo e analisi dati.", "matricola": "7345821" },
-    { "id": 39, "nome": "Helena", "cognome": "Schmidt", "status": "Operativo", "profile_pic": "assets/img/agent39.jpg", "bio": "Esperta in operazioni diplomatiche.", "matricola": "7345821" },
+    { "id": 39, "nome": "Helena", "cognome": "Schmidt", "status": "Spia nemica", "profile_pic": "assets/img/agent39.jpg", "bio": "Esperta in operazioni diplomatiche.", "matricola": "7345821" },
     { "id": 40, "nome": "Diego", "cognome": "Torres", "status": "In missione", "profile_pic": "assets/img/agent40.jpg", "bio": "Infiltrazioni ad alto profilo.", "matricola": "7345821" },
     { "id": 41, "nome": "Katarina", "cognome": "Jensen", "status": "Operativo", "profile_pic": "assets/img/agent41.jpg", "bio": "Esperta in sorveglianza avanzata.", "matricola": "7345821" },
     { "id": 42, "nome": "Mohammed", "cognome": "Saleh", "status": "Operativo", "profile_pic": "assets/img/agent42.jpg", "bio": "Specialista in reti clandestine.", "matricola": "7345821" },
@@ -52,3 +52,4 @@
     { "id": 50, "nome": "Leon", "cognome": "Fischer", "status": "In missione", "profile_pic": "assets/img/agent50.jpg", "bio": "Operazioni ad alto rischio internazionale.", "matricola": "7345821" }
   ]
 }
+
