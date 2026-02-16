@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Database Agenti</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Agenti</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Style personale -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
-<body class="bg-light">
+<body>
 
-<div class="container py-5">
-    <div class="d-flex justify-content-end">
-        <button id="logout" class="btn btn-danger"><i class="fa-solid fa-power-off mr-2"></i>Logout</button>
+  <div class="container mt-5">
+
+    <h1 class="mb-4 text-center">Database Agenti Internazionali</h1>
+
+    <!-- Reset database -->
+    <div class="mb-3 text-end">
+      <button id="resetDataBtn" class="btn btn-warning">Reset Database</button>
     </div>
-    <h2 class="mb-4 text-center text-light">Database Agenti</h2>
 
-    <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
-        <table class="table table-hover align-middle">
-            <thead class="table-dark sticky-top">
-                <tr>
-                    <th>Matricola</th>
-                    <th>Nome</th>
-                    <th>Cognome</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody id="agentsTable">
-                <!-- righe dinamiche -->
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<!-- Modal verifica codice -->
-<div class="modal fade" id="accessModal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title">Verifica Accesso</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        <label for="accessCode" class="form-label">
-          Inserisci codice di accesso
-        </label>
-        <input type="password" id="accessCode" class="form-control">
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Annulla
-        </button>
-        <button type="button" id="confirmAccess" class="btn btn-primary">
-          Conferma
-        </button>
-      </div>
-
+    <!-- Tabella scrollabile -->
+    <div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+      <table class="table table-striped table-hover" id="agentsTable">
+        <thead class="table-dark">
+          <tr>
+            <th>Matricola</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Righe generate dinamicamente da JS -->
+        </tbody>
+      </table>
     </div>
   </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Modale codice di accesso -->
+  <div id="codeModal" class="modal" tabindex="-1" style="display:none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.6); align-items: center; justify-content: center;">
+    <div class="modal-content bg-light p-4 rounded" style="max-width:400px; margin:auto;">
+      <h5>Inserisci codice di accesso</h5>
+      <input type="password" id="accessCode" class="form-control mb-3" placeholder="Codice">
+      <div class="d-flex justify-content-end">
+        <button id="confirmCode" class="btn btn-success me-2">Conferma</button>
+        <button id="closeModal" class="btn btn-secondary">Annulla</button>
+      </div>
+    </div>
+  </div>
 
-<!-- Custom JS -->
-<script src="assets/js/database.js"></script>
+  <!-- Script JS -->
+  <script src="js/database.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
