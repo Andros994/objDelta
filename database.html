@@ -33,6 +33,36 @@
     </div>
 </div>
 
+<!-- Modal verifica codice -->
+<div class="modal fade" id="accessModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title">Verifica Accesso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <label for="accessCode" class="form-label">
+          Inserisci codice di accesso
+        </label>
+        <input type="password" id="accessCode" class="form-control">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Annulla
+        </button>
+        <button type="button" id="confirmAccess" class="btn btn-primary">
+          Conferma
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <!-- Custom JS -->
@@ -40,6 +70,7 @@
 
 </body>
 </html>
+
 
 
 
