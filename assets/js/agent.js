@@ -51,8 +51,6 @@ $(document).ready(function() {
 
     const updatedAgent = {
       ...agentData,
-      nome: $("#nome").val(),
-      cognome: $("#cognome").val(),
       status: $("#status").val(),
       frequenza_contatto: $("#frequenza").val(),
       ultime_coordinate_note: $("#coordinate").val(),
@@ -90,4 +88,5 @@ $(document).ready(function() {
   loadAgent();
 
 });
+
 
