@@ -35,6 +35,7 @@ $(document).ready(function() {
 
   // ===== POPOLA I CAMPI =====
   function populateFields(agent) {
+    $('#profilePic').attr("src", agent.profile_pic);
     $("#nome").val(agent.nome);
     $("#cognome").val(agent.cognome);
     $("#status").val(agent.status);
@@ -89,3 +90,4 @@ $(document).ready(function() {
   loadAgent();
 
 });
+
