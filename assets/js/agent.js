@@ -25,6 +25,8 @@ $(document).ready(function () {
         $("#fullName").text(`${agent.nome} ${agent.cognome}`);
         $("#status").val(agent.status);
         $("#matricola").text(`Matricola: ${agent.matricola}`);
+        $("#frequenza").val(agent.frequenza_contatto);
+        $("#coordinate").val(agent.ultime_coordinate_note);
         $("#bio").text(agent.bio);
 
         // Listener cambio status (solo frontend per ora)
@@ -38,6 +40,7 @@ $(document).ready(function () {
     });
 
 });
+
 
 
 
