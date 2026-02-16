@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    let selectedAgentId = null;
+
     $.getJSON("data/agents.json", function (data) {
 
         data.agents.forEach(agent => {
@@ -19,8 +21,6 @@ $(document).ready(function () {
                 case "Offline":
                     statusClass = "bg-secondary";
                     break;
-                default:
-                    statusClass = "bg-light text-dark";
             }
 
             $("#agentsTable").append(`
@@ -28,29 +28,38 @@ $(document).ready(function () {
                     <td><strong>${agent.matricola}</strong></td>
                     <td>${agent.nome}</td>
                     <td>${agent.cognome}</td>
-                    <td>
-                        <span class="badge ${statusClass}">
-                            ${agent.status}
-                        </span>
-                    </td>
+                    <td><span class="badge ${statusClass}">${agent.status}</span></td>
                 </tr>
             `);
 
         });
 
-        $(".agent-row").on("click", function () {
-            const id = $(this).data("id");
-            window.location.href = `agent.html?id=${id}`;
-        });
+    });
 
-        $("#logout").on("click", function () {
-             window.location.href = `index.html`;
-        });
+    // 🔹 CLICK SU RIGA
+    $(document).on("click", ".agent-row", function () {
+        selectedAgentId = $(this).data("id");
 
-    }).fail(function () {
-        console.error("Errore nel caricamento di agents.json");
+        $("#accessCode").val(""); // pulisco campo
+        const modal = new bootstrap.Modal(document.getElementById('accessModal'));
+        modal.show();
+    });
+
+    // 🔹 CLICK SU CONFERMA
+    $("#confirmAccess").on("click", function () {
+
+        const enteredCode = $("#accessCode").val();
+
+        if (enteredCode === "7924") {
+
+            window.location.href = `agent.html?id=${selectedAgentId}`;
+
+        } else {
+
+            alert("Codice di accesso errato!");
+
+        }
+
     });
 
 });
-
-
