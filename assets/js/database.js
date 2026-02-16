@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ===== LOAD DATA =====
-  fetch("https://andros994.github.io/objDelta/data/agents.json")
+  fetch("./data/agents.json")
     .then(res => res.json())
     .then(data => {
 
@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 
 
 
