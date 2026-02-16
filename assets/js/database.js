@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ===== LOAD DATA =====
-  fetch("../data/agenti.json")
+  fetch("../data/agents.json")
     .then(res => res.json())
     .then(data => {
 
@@ -100,5 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 
 
