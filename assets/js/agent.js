@@ -1,46 +1,60 @@
-$(document).ready(function () {
+const urlParams = new URLSearchParams(window.location.search);
+const agentId = urlParams.get("id");
 
-    // 1️⃣ Prendo l'id dalla query string (?id=)
-    const params = new URLSearchParams(window.location.search);
-    const agentId = parseInt(params.get("id"));
+let agentData = null;
 
-    if (!agentId) {
-        console.error("ID agente non valido");
-        return;
+// Carica dati
+fetch("agenti.json")
+  .then(res => res.json())
+  .then(data => {
+
+    const agents = data.agents;
+
+    // Se esiste versione salvata
+    const savedAgents = JSON.parse(localStorage.getItem("agentsData"));
+    const source = savedAgents ? savedAgents : agents;
+
+    agentData = source.find(agent => agent.id == agentId);
+
+    if (agentData) {
+      document.getElementById("nome").value = agentData.nome;
+      document.getElementById("cognome").value = agentData.cognome;
+      document.getElementById("status").value = agentData.status;
+      document.getElementById("frequenza").value = agentData.frequenza_contatto;
+      document.getElementById("coordinate").value = agentData.ultime_coordinate_note;
+      document.getElementById("bio").value = agentData.bio;
     }
+  });
 
-    // 2️⃣ Carico il JSON
-    $.getJSON("data/agents.json", function (data) {
 
-        // 3️⃣ Filtro l'agente in base all'id
-        const agent = data.agents.find(a => a.id === agentId);
+// SALVA MODIFICHE
+document.getElementById("saveAgentBtn").addEventListener("click", () => {
 
-        if (!agent) {
-            console.error("Agente non trovato");
-            return;
-        }
+  const updatedAgent = {
+    ...agentData,
+    nome: document.getElementById("nome").value,
+    cognome: document.getElementById("cognome").value,
+    status: document.getElementById("status").value,
+    frequenza_contatto: document.getElementById("frequenza").value,
+    ultime_coordinate_note: document.getElementById("coordinate").value,
+    bio: document.getElementById("bio").value
+  };
 
-        // 4️⃣ Popolo la card con i dati dell'agente
-        $("#profilePic").attr("src", agent.profile_pic);
-        $("#fullName").text(`${agent.nome} ${agent.cognome}`);
-        $("#status").val(agent.status);
-        $("#matricola").text(`Matricola: ${agent.matricola}`);
-        $("#frequenza").val(agent.frequenza_contatto);
-        $("#coordinate").val(agent.ultime_coordinate_note);
-        $("#bio").text(agent.bio);
+  // Recupera lista attuale
+  fetch("agenti.json")
+    .then(res => res.json())
+    .then(data => {
 
-        // Listener cambio status (solo frontend per ora)
-        $("#status").on("change", function () {
-            const newStatus = $(this).val();
-            alert(`Nuovo status per ${agent.nome} ${agent.cognome}: ${newStatus}`);
-        });
+      let agents = data.agents;
 
-    }).fail(function () {
-        console.error("Errore nel caricamento di agents.json");
+      const savedAgents = JSON.parse(localStorage.getItem("agentsData"));
+      if (savedAgents) agents = savedAgents;
+
+      const index = agents.findIndex(a => a.id == agentId);
+      agents[index] = updatedAgent;
+
+      localStorage.setItem("agentsData", JSON.stringify(agents));
+
+      alert("Modifiche salvate correttamente!");
     });
-
 });
-
-
-
-
