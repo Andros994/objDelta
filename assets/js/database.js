@@ -1,110 +1,94 @@
-document.addEventListener("DOMContentLoaded", () => {
+$(document).ready(function() {
 
-  const tableBody = document.querySelector("#agentsTable tbody");
-  const modal = document.getElementById("codeModal");
-  const codeInput = document.getElementById("accessCode");
-  const confirmBtn = document.getElementById("confirmCode");
-  const closeBtn = document.getElementById("closeModal");
+  const $tableBody = $("#agentsTable tbody");
+  const $modal = $("#codeModal");
+  const $codeInput = $("#accessCode");
+  const $confirmBtn = $("#confirmCode");
+  const $closeBtn = $("#closeModal");
+  const $resetBtn = $("#resetDataBtn");
 
   let selectedAgentId = null;
 
-  // ===== STATUS COLOR HELPER =====
+  // ===== STATUS COLOR =====
   function getStatusColor(status) {
     switch (status) {
-      case "Operativo":
-        return "green";
-      case "In missione":
-        return "orange";
-      case "Spia nemica":
-        return "red";
-      case "Offline":
-        return "gray";
-      default:
-        return "white";
+      case "Operativo": return "green";
+      case "In missione": return "orange";
+      case "Spia nemica": return "red";
+      case "Offline": return "gray";
+      default: return "black";
     }
   }
 
   // ===== RENDER TABLE =====
   function renderTable(agents) {
-    tableBody.innerHTML = "";
-
+    $tableBody.empty();
     agents.forEach(agent => {
-      const row = document.createElement("tr");
-      row.classList.add("agent-row");
-      row.dataset.id = agent.id;
-
-      row.innerHTML = `
-        <td>${agent.matricola}</td>
-        <td>${agent.nome}</td>
-        <td>${agent.cognome}</td>
-        <td style="color:${getStatusColor(agent.status)}; font-weight:bold;">
-          ${agent.status}
-        </td>
-      `;
-
-      tableBody.appendChild(row);
+      const row = $(`
+        <tr class="agent-row" data-id="${agent.id}">
+          <td>${agent.matricola}</td>
+          <td>${agent.nome}</td>
+          <td>${agent.cognome}</td>
+          <td style="color:${getStatusColor(agent.status)}; font-weight:bold;">
+            ${agent.status}
+          </td>
+        </tr>
+      `);
+      $tableBody.append(row);
     });
   }
 
   // ===== LOAD DATA =====
-  fetch("data/agents.json")
-    .then(res => res.json())
-    .then(data => {
+  $.getJSON("data/agents.json", function(data) {
 
-      let agents = data.agents;
+    let agents = data.agents;
 
-      // Se esistono modifiche salvate localmente
-      const savedAgents = JSON.parse(localStorage.getItem("agentsData"));
-      if (savedAgents) {
-        agents = savedAgents;
-      }
+    // Se esistono modifiche salvate localmente
+    const savedAgents = JSON.parse(localStorage.getItem("agentsData"));
+    if (savedAgents) {
+      agents = savedAgents;
+    }
 
-      renderTable(agents);
-    })
-    .catch(error => {
-      console.error("Errore nel caricamento JSON:", error);
-    });
+    renderTable(agents);
 
-
-  // ===== CLICK SU RIGA =====
-  document.addEventListener("click", function (e) {
-    const row = e.target.closest(".agent-row");
-    if (!row) return;
-
-    selectedAgentId = row.dataset.id;
-
-    codeInput.value = "";
-    modal.style.display = "flex";
+  }).fail(function() {
+    console.error("Errore nel caricamento JSON");
   });
 
+  // ===== CLICK SU RIGA =====
+  $(document).on("click", ".agent-row", function() {
+    selectedAgentId = $(this).data("id");
+    $codeInput.val("");
+    $modal.show();
+  });
 
   // ===== CONFERMA CODICE =====
-  confirmBtn.addEventListener("click", () => {
-    if (codeInput.value === "7924") {
+  $confirmBtn.on("click", function() {
+    if ($codeInput.val() === "7924") {
       window.location.href = `agent.html?id=${selectedAgentId}`;
     } else {
       alert("Codice di accesso errato!");
     }
   });
 
-
   // ===== CHIUSURA MODALE =====
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
+  $closeBtn.on("click", function() {
+    $modal.hide();
   });
 
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
+  $(window).on("click", function(e) {
+    if ($(e.target).is($modal)) {
+      $modal.hide();
+    }
+  });
+
+  // ===== RESET DATABASE =====
+  $resetBtn.on("click", function() {
+    if (confirm("Vuoi davvero ripristinare il database originale? Tutte le modifiche verranno perse.")) {
+      localStorage.removeItem("agentsData");
+      alert("Database ripristinato con successo!");
+      location.reload();
     }
   });
 
 });
-
-
-
-
-
-
-
-
