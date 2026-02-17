@@ -1,9 +1,9 @@
 {
   "agents": [
-    { "id": 1, "nome": "Hans", "cognome": "Weiss", "status": "Operativo", "profile_pic": "assets/img/andrea_s.jpg", "bio": "Esperto in infiltrazione europea e cyber intelligence.", "matricola": "7345821", "frequenza_contatto": "433.500 MHz",
-      "ultime_coordinate_note": "33T 372549 4790812" },
-    { "id": 2, "nome": "Diego", "cognome": "Dragos", "status": "Operativo", "profile_pic": "assets/img/eugenio.jpg", "bio": "Specialista in operazioni sotto copertura in Francia.", "matricola": "7345821", "frequenza_contatto": "145.750 MHz",
-      "ultime_coordinate_note": "31U 448251 5411932" },
+    { "id": 1, "nome": "Hans", "cognome": "Weiss", "status": "Operativo", "profile_pic": "assets/img/andrea_s.jpg", "bio": "Esperto in infiltrazione europea e cyber intelligence.", "matricola": "7345821", "frequenza_contatto": "",
+      "ultime_coordinate_note": "" },
+    { "id": 2, "nome": "Diego", "cognome": "Dragos", "status": "Operativo", "profile_pic": "assets/img/eugenio.jpg", "bio": "Specialista in operazioni sotto copertura in Francia.", "matricola": "7345821", "frequenza_contatto": "",
+      "ultime_coordinate_note": "" },
     { "id": 3, "nome": "Klaus", "cognome": "Volmer", "status": "In missione", "profile_pic": "assets/img/gianluca.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "7345821",
       "frequenza_contatto": "",
       "ultime_coordinate_note": "" },
@@ -150,6 +150,7 @@
       "ultime_coordinate_note": "" }
   ]
 }
+
 
 
 
