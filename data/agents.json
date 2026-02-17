@@ -4,7 +4,7 @@
       "ultime_coordinate_note": "33T 372549 4790812" },
     { "id": 2, "nome": "Lucas", "cognome": "Moreau", "status": "Operativo", "profile_pic": "assets/img/eugenio.jpg", "bio": "Specialista in operazioni sotto copertura in Francia.", "matricola": "7345821", "frequenza_contatto": "145.750 MHz",
       "ultime_coordinate_note": "31U 448251 5411932" },
-    { "id": 3, "nome": "Mikhail", "cognome": "Orlov", "status": "In missione", "profile_pic": "assets/img/gianluca.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "7345821",
+    { "id": 3, "nome": "Klaus", "cognome": "Volmer", "status": "In missione", "profile_pic": "assets/img/gianluca.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "7345821",
       "frequenza_contatto": "129.875 MHz",
       "ultime_coordinate_note": "34T 289741 4642083" },
     { "id": 4, "nome": "Sofia", "cognome": "Ivanova", "status": "Operativo", "profile_pic": "assets/img/agent4.jpg", "bio": "Esperta in controspionaggio e interrogatori.", "matricola": "7345821",
@@ -150,6 +150,7 @@
       "ultime_coordinate_note": "34T 289741 4642083" }
   ]
 }
+
 
 
 
