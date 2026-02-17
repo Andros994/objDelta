@@ -64,7 +64,7 @@ $(document).ready(function() {
 
   // ===== CONFERMA CODICE =====
   $confirmBtn.on("click", function() {
-    if ($codeInput.val() === "7924") {
+    if ($codeInput.val() === "7294") {
       window.location.href = `agent.html?id=${selectedAgentId}`;
     } else {
       alert("Codice di accesso errato!");
@@ -92,3 +92,4 @@ $(document).ready(function() {
   });
 
 });
+
