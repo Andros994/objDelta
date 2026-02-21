@@ -1,12 +1,9 @@
 {
   "agents": [
     { "id": 1, "nome": "Hans", "cognome": "Weiss", "status": "Operativo", "profile_pic": "assets/img/andrea_s.jpg", "bio": "Esperto in infiltrazione europea e cyber intelligence.", "matricola": "A7K3X9", "frequenza_contatto": "", "ultime_coordinate_note": "" },
-    { "id": 2, "nome": "Diego", "cognome": "Dragos", "status": "Operativo", "profile_pic": "assets/img/eugenio.jpg", "bio": "Specialista in operazioni sotto copertura in Francia.", "matricola": "B4M8Q2", "frequenza_contatto": "", "ultime_coordinate_note": "" },
-    { "id": 3, "nome": "Klaus", "cognome": "Volmer", "status": "In missione", "profile_pic": "assets/img/gianluca.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "C9T2L7", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 4, "nome": "Sofia", "cognome": "Ivanova", "status": "Operativo", "profile_pic": "assets/img/f_1.jpg", "bio": "Esperta in controspionaggio e interrogatori.", "matricola": "D5R7W1", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 5, "nome": "Dieter", "cognome": "Koch", "status": "Operativo", "profile_pic": "assets/img/matteo_r.jpg", "bio": "Ex forze speciali, specializzato in estrazioni rapide.", "matricola": "E2Z8H4", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 6, "nome": "Elena", "cognome": "Rossi", "status": "Spia nemica", "profile_pic": "assets/img/f_5.jpg", "bio": "Esperta in intelligence mediterranea.", "matricola": "F6N3K8", "frequenza_contatto": "", "ultime_coordinate_note": "" },
-    { "id": 7, "nome": "Marko", "cognome": "Ivanov", "status": "Operativo", "profile_pic": "assets/img/giuseppe.jpg", "bio": "Specialista in crittografia e comunicazioni sicure.", "matricola": "G1P9V5", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 8, "nome": "Nadia", "cognome": "Petrova", "status": "Offline", "profile_pic": "assets/img/f_6.jpg", "bio": "Analista logistica e supporto operativo.", "matricola": "H8C4T2", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 9, "nome": "Marco", "cognome": "Schmidt", "status": "Operativo", "profile_pic": "assets/img/alessio_v.jpg", "bio": "Esperto in infiltrazioni in Medio Oriente.", "matricola": "J3L7X6", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 10, "nome": "Claire", "cognome": "Dubois", "status": "In missione", "profile_pic": "assets/img/denny.jpg", "bio": "Specialista in operazioni diplomatiche coperte.", "matricola": "K9D2M4", "frequenza_contatto": "", "ultime_coordinate_note": "" },
@@ -14,6 +11,7 @@
     { "id": 12, "nome": "Hiroshi", "cognome": "Tanaka", "status": "Operativo", "profile_pic": "assets/img/f_2.jpg", "bio": "Specialista in sorveglianza urbana.", "matricola": "M7X1C9", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 13, "nome": "Anna", "cognome": "Kowalska", "status": "Offline", "profile_pic": "assets/img/f_7.jpg", "bio": "Analista strategica dell’Europa orientale.", "matricola": "N2H6R3", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 14, "nome": "Mark", "cognome": "Johnson", "status": "Operativo", "profile_pic": "assets/img/m_2.jpg", "bio": "Esperto in operazioni black ops.", "matricola": "P5T9K1", "frequenza_contatto": "", "ultime_coordinate_note": "" },
+    { "id": 3, "nome": "Klaus", "cognome": "Volmer", "status": "In missione", "profile_pic": "assets/img/gianluca.jpg", "bio": "Analista tattico con esperienza nei Balcani.", "matricola": "C9T2L7", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 15, "nome": "Isabel", "cognome": "Moreno", "status": "In missione", "profile_pic": "assets/img/f_4.jpg", "bio": "Specialista in coperture diplomatiche.", "matricola": "Q8V3L6", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 16, "nome": "Sergei", "cognome": "Volkov", "status": "Operativo", "profile_pic": "assets/img/m_4.jpg", "bio": "Esperto in intelligence militare.", "matricola": "R1W7D8", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 17, "nome": "Lina", "cognome": "Haddad", "status": "Spia nemica", "profile_pic": "assets/img/f_3.jpg", "bio": "Analista culturale e linguistica.", "matricola": "S4K2N9", "frequenza_contatto": "", "ultime_coordinate_note": "" },
@@ -28,6 +26,7 @@
     { "id": 26, "nome": "Fatima", "cognome": "Zahra", "status": "Operativo", "profile_pic": "assets/img/undefined.jpg", "bio": "Esperta in relazioni diplomatiche segrete.", "matricola": "B8T3W6", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 27, "nome": "Jonas", "cognome": "Berg", "status": "Operativo", "profile_pic": "assets/img/m_9.jpg", "bio": "Specialista in intelligence nordica.", "matricola": "C2V7M1", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 28, "nome": "Carlos", "cognome": "Mendez", "status": "Offline", "profile_pic": "assets/img/m_10.jpg", "bio": "Supporto operativo e logistico.", "matricola": "D9H4K8", "frequenza_contatto": "", "ultime_coordinate_note": "" },
+    { "id": 2, "nome": "Diego", "cognome": "Dragos", "status": "Operativo", "profile_pic": "assets/img/eugenio.jpg", "bio": "Specialista in operazioni sotto copertura in Francia.", "matricola": "B4M8Q2", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 29, "nome": "Aisha", "cognome": "Khan", "status": "Operativo", "profile_pic": "assets/img/undefined.jpg", "bio": "Esperta in cyber spionaggio.", "matricola": "E3P6X7", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 30, "nome": "Robert", "cognome": "Miller", "status": "In missione", "profile_pic": "assets/img/m_12.jpg", "bio": "Operazioni speciali internazionali.", "matricola": "F7Q2L9", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 31, "nome": "Giulia", "cognome": "Bianchi", "status": "Spia nemica", "profile_pic": "assets/img/undefined.jpg", "bio": "Analista strategica europea.", "matricola": "G5R8C1", "frequenza_contatto": "", "ultime_coordinate_note": "" },
@@ -46,9 +45,11 @@
     { "id": 44, "nome": "Irina", "cognome": "Belova", "status": "Operativo", "profile_pic": "assets/img/undefined.jpg", "bio": "Esperta in intelligence psicologica.", "matricola": "V3K6H8", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 45, "nome": "Matteo", "cognome": "Ricci", "status": "In missione", "profile_pic": "assets/img/undefined.jpg", "bio": "Operazioni sotto copertura in Europa.", "matricola": "W7T1L4", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 46, "nome": "Noah", "cognome": "Williams", "status": "Operativo", "profile_pic": "assets/img/m_25.jpg", "bio": "Esperto in sorveglianza elettronica.", "matricola": "X5C9V2", "frequenza_contatto": "", "ultime_coordinate_note": "" },
+    { "id": 7, "nome": "Marko", "cognome": "Ivanov", "status": "Operativo", "profile_pic": "assets/img/giuseppe.jpg", "bio": "Specialista in crittografia e comunicazioni sicure.", "matricola": "G1P9V5", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 47, "nome": "Sara", "cognome": "Lindholm", "status": "Operativo", "profile_pic": "assets/img/undefined.jpg", "bio": "Analista strategica nordica.", "matricola": "Y8R4K6", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 48, "nome": "Yusuf", "cognome": "Demir", "status": "Offline", "profile_pic": "assets/img/m_21.jpg", "bio": "Supporto logistico internazionale.", "matricola": "Z2L7M3", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 49, "nome": "Emma", "cognome": "Clark", "status": "Operativo", "profile_pic": "assets/img/undefined.jpg", "bio": "Esperta in operazioni segrete urbane.", "matricola": "A9V5T8", "frequenza_contatto": "", "ultime_coordinate_note": "" },
     { "id": 50, "nome": "Leon", "cognome": "Fischer", "status": "In missione", "profile_pic": "assets/img/m_23.jpg", "bio": "Operazioni ad alto rischio internazionale.", "matricola": "B3X8R1", "frequenza_contatto": "", "ultime_coordinate_note": "" }
   ]
 }
+
