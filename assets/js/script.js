@@ -1,6 +1,6 @@
 // Credenziali di esempio
-const username = "admin";
-const psw = "1234";
+const username = "kgb_admin";
+const psw = "38fh_!?-7g1”##è";
 
 $(document).ready(function () {
 
@@ -19,3 +19,4 @@ $(document).ready(function () {
     });
 
 });
+
